@@ -1,0 +1,1 @@
+page.replace "rec_drg_#{@reserva.data}", :partial => 'day', :object=>@reserva.data

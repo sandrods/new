@@ -1,0 +1,80 @@
+/* Typography
+---------------------------------------------------------*/
+
+body {
+	font:62.5% "Verdana"; /* Change this % to alter the size of the whole page */
+	color:#000;
+}
+
+a {
+	color:#090;
+}
+
+p {
+	line-height:1.5em;	
+	font-size:1.2em;
+	margin-bottom:1em;
+}
+
+h1 {	
+	font-size: 3.2em;
+	padding:0;
+	margin:0;
+	color:#FFF;
+}
+
+h2 {
+	font-size:2em;	
+	line-height:1.5em;
+	margin-bottom:0.5em;
+}
+
+blockquote {
+	border-left:0.3em solid #090;
+	padding-left:2em;
+	margin-left:1em;	
+	color:#666;
+}
+
+.article li {
+	font-size:1.2em;
+}
+
+.comments {
+	font-size:0.95em;
+}
+
+#subContent h2 {
+	font-size:1.3em;	
+}
+
+#subContent p {
+	font-size:1.1em;	
+}
+
+#masthead p {
+	color:#CF0;	
+}
+
+#masthead li a {
+	font-size:1.2em;
+	color:#000;
+	text-decoration:none;
+}
+
+#footer {
+	color:#CCC;	
+}
+
+#footer a {	
+	color:#FFF;	
+	text-decoration:none;
+}
+
+#footer a:hover {
+	text-decoration:underline;	
+}
+
+#footer p {
+	margin-bottom:0;
+}

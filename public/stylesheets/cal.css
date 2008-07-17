@@ -1,0 +1,53 @@
+table.cal {
+	border-left: 1px solid #999;
+	border-top: 1px solid #999;
+}
+table.cal td {
+	padding: 3px;
+	height: 95px;
+	border-bottom: 1px solid #999;
+	border-right: 1px solid #999;
+	vertical-align: top;
+}
+table.cal th {
+	padding: 3px;
+	border-bottom: 1px solid #999;
+	border-right: 1px solid #999;
+	width: 95px;
+	background-color: #D1FFFA;
+}
+div.day,div.day1,div.today {
+	font-size: 16px;
+	color: #777;
+	margin-bottom: 10px;
+}
+div.day1 {
+	color: #ccc;
+}
+div.today {
+	color: #009900;
+	font-weight: bold;
+}
+.hover_drop {
+	background-color: #FF6;
+}
+.drag {
+	padding: 2px;
+}
+.drag img {
+	vertical-align: middle;
+	margin-right: 10px;
+}
+div.mes {
+	margin: 0px 0 10px 0;
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	color: #555;
+}
+div.mes a {
+	text-decoration: none;
+}
+div.mes a:hover {
+	text-decoration: underline;
+}

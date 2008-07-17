@@ -1,0 +1,29 @@
+<h2 id="reservas">Reservas do Salão de Festas e Áreas Externas</h2>
+<div class='mes'><%=nav_cal(@cal)%></div>
+
+<table class="cal" cellpadding=0 cellspacing=0>
+	<tr>
+		<th>Segunda</th>
+		<th>Terça</th>
+		<th>Quarta</th>
+		<th>Quinta</th>
+		<th>Sexta</th>
+		<th>Sábado</th>
+		<th>Domingo</th>
+	</tr>
+	<% @cal.weeks.each do |week| %>
+	<tr>
+		<%= render :partial => 'day', :collection=>week %>
+	</tr>
+	<% end %>
+</table>
+
+<%- content_for :side do -%>
+<div class='header'>Locais para Reserva</div>
+<p>Arraste o botão da Local desejado e solte sobre uma data para efetuar a Reserva</p>
+<div class='drag'><%=image_tag('drg_salao.gif', :id=>'drag_salao')%>Salão de Festas</div>
+<div class='drag'><%=image_tag('drg_pizza.gif', :id=>'drag_pizza')%>Forno de Pizza</div>
+<div class='drag'><%=image_tag('drg_churras.gif', :id=>'drag_churras')%>Churrasqueira</div>
+
+<%= %w(drag_salao drag_pizza drag_churras).map {|d| draggable_element(d, :revert => true) }.join("\n") %>
+<%- end -%>

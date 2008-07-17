@@ -1,0 +1,9 @@
+<td id='<%="rec_drg_#{day}"%>'>
+	<%=div_day(day)%>
+	<%- if  @cal.this_month?(day) -%>
+		<%= @reservas[day].map { |r| buttons_reserva(r) }.join("<br/>\n") if @reservas[day] %>
+		<%= drop_receiving_element("rec_drg_#{day}", 
+									:url => { :controller => "reservas", :action => "create", :day=>day }, 
+									:hoverclass=>'hover_drop') %>
+	<%- end -%>
+</td>

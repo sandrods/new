@@ -1,0 +1,2 @@
+page.replace "rec_drg_#{@reserva.data}", :partial => 'day', :object=>@reserva.data
+page.alert(@reserva.errors.full_messages.join("\n")) unless @ok

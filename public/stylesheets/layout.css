@@ -1,0 +1,169 @@
+
+/* Layout
+---------------------------------------------------------*/
+
+* {
+	padding:0;
+	margin:0;	
+	list-style:none;
+}
+
+img { 	border:0; }
+body {
+	background:#222;
+}
+
+#header {
+	background:url(../images/bg.gif) bottom repeat-x;
+	width:100%;
+	height:12em;
+	position:relative;
+}
+
+#masthead	{
+	width:50em;
+	margin:0 auto;
+	padding:2.0em 0 4.8em 19em;
+	height:5.2em;
+	position:relative;
+}
+
+#masthead ul {
+	position:absolute;
+	bottom:0;	
+	z-index:0;
+}
+
+#masthead li {
+	float:left;
+	margin-right:10px;
+	background:#d8ed46 url(../images/nav_over.gif) bottom repeat-x;
+}
+#masthead li.active a {
+	color:navy;
+}
+#masthead li a {
+	background:transparent url(../images/nav_over_left.gif) top left no-repeat;
+	display:block;
+}
+
+#masthead li:hover {
+	background:#d8ed46 url(../images/nav_under.gif) bottom repeat-x;
+}
+
+#masthead li a strong {
+	padding:0.5em 10px 0.5em 0; 
+	margin-left:10px;
+	display:block;	
+	background:transparent url(../images/nav_over_right.gif) top right no-repeat;
+}
+
+#masthead img {
+	position:absolute;
+
+	border:0.3em solid #ddd;
+	left:0;
+	bottom:4.2em;
+	outline:0.2em solid #000;
+}
+
+#main {
+	background:#FFF; /* url(../images/main.gif) repeat-x; */
+	width:100%;
+	z-index:2; /* Covers up annoying IE7 nav bar spacing issue. */
+	position:absolute;
+}
+
+#content {
+	background:#FFFFFF url('../images/right_column_background.png') repeat-y scroll 76em 0pt;
+	width:960px;
+	margin:0 auto;
+	padding:2em;
+}
+
+#subContent {
+	width:200px;	
+	padding-left:2em;
+	float:right;
+	min-height:100%;
+}
+
+#subContent .header {
+	background:transparent url('../images/module-header.png') no-repeat scroll 0pt 0pt;
+	color:#FFFFFF;
+	font-size:14px;
+	margin:0pt 0pt 6px;
+	min-width:217px;
+	padding:0.44em 0.6em;
+	text-align:left;
+	font-weight: bold;
+}
+.article {
+	width:49.5em;
+	padding-bottom:6.5em;
+	padding-right:2em;
+	background:url(../images/hr.gif) right bottom no-repeat;
+	position:relative;
+}
+
+.article ul {
+	margin:1em 0;	
+}
+
+.article li {
+	margin-left:1.5em;
+	margin-bottom:0.5em;
+}
+
+.article ul li, #subContent ul li {
+	background:url(../images/bullet.gif) left no-repeat;
+	padding-left:1em;
+}
+
+.comments {
+	position:absolute;
+	right:3em;	
+	bottom:3em;
+}
+
+.article .comments li {
+	display:inline;
+	margin:0;
+	padding:0;
+	background:none;
+}
+
+.hr {
+	width:55em;
+	height:128px;
+}
+
+#footer {
+	clear:both;
+	background:#222;
+	height:16em;
+	position:relative;
+}
+
+#footer ul {
+	position:absolute;
+	text-align:right;
+	right:50%;
+	top:50%;
+	margin-top:-4em;
+	padding:3em 1em;
+	border-right:1px solid #CF0;
+}
+
+#footer img {
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin-top:-2.9em;
+	background:#CCC;
+	margin-left:1em;
+	height:5em;
+	width:5em;
+	border:5px solid #FFF;
+	outline:0.1em solid #333;
+}
